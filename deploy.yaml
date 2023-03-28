@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp-deploy
+spec:
+  selector:
+    matchLabels:
+      app: webapp
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+      - name: webapp
+        image: jmcglobal/track-webapp:release0
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: queue-deploy
+spec:
+  selector:
+    matchLabels:
+      app: queue
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: queue
+    spec:
+      containers:
+      - name: queue
+        image: jmcglobal/track-queue:release1

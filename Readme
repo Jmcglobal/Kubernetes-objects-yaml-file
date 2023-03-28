@@ -1,0 +1,8 @@
+### Yaml Config for :
+    Pod 
+    replicas
+    Service
+    Deployment
+
+### Deployment vs replicas.
+    Unlike replicaset, deployment have an extra feature "Automatic rolling update with zero downtime"
