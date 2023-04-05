@@ -18,4 +18,4 @@ A ReplicaSet is a controller that ensures that a specified number of Pod replica
 
 ### Deployment: 
 
-A Deployment is an object in Kubernetes that is used to manage and maintain the desired state of an application. It is used to create, update, and delete Pods and ReplicaSets, and to ensure that the desired number of replicas are running at any given time.
+A Deployment is an object in Kubernetes that is used to manage and maintain the desired state of an application. It is used to create, update, and delete Pods and ReplicaSets, and to ensure that the desired number of replicas are running at any given time.........
